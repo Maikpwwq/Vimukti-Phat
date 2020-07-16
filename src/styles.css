@@ -11,3 +11,6 @@
   font-family: FuturaRound;
   src: url(./fonts/FuturaRoundBold.ttf);
 }
+html {
+  font-family: 'Epilogue', sans-serif;
+}
