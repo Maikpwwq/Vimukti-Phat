@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: HelveticaNeueLight;
+  src: url(./fonts/HelveticaNeue-Light.ttf);
+}
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url(./fonts/HelveticaNeue-CondensedBold.ttf);
+}
+@font-face {
+  font-family: FuturaRound;
+  src: url(./fonts/FuturaRoundBold.ttf);
+}

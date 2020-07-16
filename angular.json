@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Vimukti-Phat"
+    }
+  },
+  "defaultProject": "Vimukti-Phat",
+  "cli": {
+    "analytics": false
+  }
 }
