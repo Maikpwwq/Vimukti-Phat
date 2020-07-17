@@ -6,14 +6,14 @@
     "Vimukti-Phat": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "app-root",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Vimukti-Phat",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
