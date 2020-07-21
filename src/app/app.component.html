@@ -8,260 +8,406 @@
 <body>
     <header>
       <!-- Localizacion Actual -->
-      <nav>
-        <div class="nav-wrapper">
-          <div class="col s12">
-            <a href="#!" class="breadcrumb">Bienvenido</a>
-            <a href="#!" class="breadcrumb">Second</a>
-            <a href="#!" class="breadcrumb">Third</a>
-          </div>
-          <!-- Barra Busqueda -->
-          <form>
-            <div class="input-field">
-              <input id="search" type="search" required>
-              <label class="label-icon" for="search"><i class="fas fa-ankh material-icons"> Busqueda </i></label>
-              <i class="material-icons"> cerrar </i>
-            </div>
-          </form>
-        </div><hr>
-      </nav>
       <!-- Menu de navegacion -->
-      <nav>
+      <nav class="nav-extended">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo" title="Logo"> Imagen Logo </a>
-          <!-- Paginas Menu -->
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="shastras.html"> Registros Akashicos </a></li>
-            <li><a href="kirtan.html"> Bhakti Yogi </a></li>
-            <li><a href="guru.html"> Mantras/Mudras </a></li>
-            <li><a href="rishi.html"> Brahman Siddhis </a></li>
+          <div class="container">
+            <!-- Barra Busqueda -->
+            <a href="#" class="brand-logo" title="Logo"> <img src="../images/Marca/LogoYantraBlack.png" alt="Imagen Logo"> </a>
+            <!-- Menu Mobile -->
+            <a id="menu" href="#" class="btn btn-floating btn-large cyan dropdown-trigger sidenav-trigger"
+              data-target="nav-mobile" onclick="$('.tap-target').tapTarget('open')">
+              <i class="material-icons">menu</i>
+            </a>
+            <!-- Paginas Menu -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="search">
+                <form>
+                    <div class="input-field search-wrapper focused">
+                      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                      <input id="search" type="search" required>
+                      <i class="material-icons">close</i>
+                    </div>
+                </form>
+              </li>
+              <li><a href="shastras.html"> Registros Akashicos </a></li>
+              <li><a href="kirtan.html"> Bhakti Yogi </a></li>
+              <li><a href="guru.html"> Mantras/Mudras </a></li>
+              <li><a href="rishi.html"> Brahman Siddhis </a></li>
+              <li><a class="pulse" href="ingresar.html">  <i class="fas fa-ankh"></i> Ingresar</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a class="active" href="#test1">Nivel 1</a></li>
+            <li class="tab disabled"><a href="#test2">Nivel 2</a></li>
+            <li class="tab disabled"><a href="#test3">Nivel 3</a></li>
+            <li class="tab disabled"><a href="#test4">Nivel 4</a></li>
+            <li class="tab disabled"><a href="#test2">Nivel 5</a></li>
+            <li class="tab disabled"><a href="#test3">Nivel 6</a></li>
+            <li class="tab disabled"><a href="#test4">Nivel 7</a></li>
           </ul>
         </div>
       </nav>
+      <!-- Paginas Menu Mobile -->
+      <div class="tap-target" data-target="menu">
+        <div class="tap-target-content">
+          <i class="material-icons">arrow_back</i>
+          <ul id="nav-mobile" class="dropdown-content sidenav">
+            <li class="search hide-on-small-only">
+              <form>
+                  <div class="input-field search-wrapper focused">
+                  <input id="search" type="search" placeholder="Buscar" required>
+                  <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                  </div>
+              </form>
+            </li>
+            <li class="hide-on-small-only"><a href="shastras.html"> Registros Akashicos </a></li>
+            <li class="hide-on-small-only"><a href="kirtan.html"> Bhakti Yogi </a></li>
+            <li class="hide-on-small-only"><a href="guru.html"> Mantras/Mudras </a></li>
+            <li class="hide-on-small-only"><a href="rishi.html"> Brahman Siddhis </a></li>
+            <li class="hide-on-small-only"><a href="ingresar.html"> Ingresar </a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- Imagen Pagina Inicio -->
-    <div class="parallax-container">
-      <div class="parallax"><img src="../assets/images/PurushaSuktam.jpg"></div>
-    </div>
-    <!-- Contenido del sitio Web -->
-    <div class="section white">
-      <section class="row container">
-        <div class="column">
-          <!-- Mensaje de Bienvenida -->
-          <h2 class="header"> Libera tu maximo potencial </h2>
-          <p class="grey-text text-darken-3 lighten-3">
-            La libertad espiritual es el proceso por el cual el alma condicionada <br>
-            puede despojarse del sufrimiento, la lujuria, la ira, el deseo.
-            El proceso comienza liderado el paso de los pensamientos de la mente desde el miedo a la fe,
-            así el poder de la mente independiente es respaldado por la definicion de un proposito.
-            Fe es la definición de un propósito respaldado por la convicción en la obtención del objetivo de ese proposito.
-            En esta plataforma se cubren programas en temas diversos como son:
-            el cuerpo, la mente, el espíritu, el trabajo y las relaciones.</p>
-          <div class="column">
-            <!-- Contenidos Dispocisión -->
+    <main>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img class="responsive-img" src="src/images/Wallpapers/Sunset.jpg">
+          <div class="row">
+            <div class="col s12 m5">
+              <div class="valign-wrapper center-align">
+                <h1>Libera tu maximo potencial</h1> <br>
+                <p class="flow-text">Expresión física de la luz,
+                  Voluntad mental del pensamiento,
+                  Libertad espiritual del alma.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contenido del sitio Web contenidoClases-->
+      <div class="section white">
+        <div class="mainContainer">
             <div class="row">
-              <div class="col s12 m7">
-                <div class="card medium">
-                  <div class="card-image">
-                    <img src="../assets/images/Horus.jpg">
-                    <span class="card-title">Dispocisión</span>
+              <div class="col s12 m12 l8">
+                <!-- Mensaje de Bienvenida -->
+                <h2 class="header"> Libera tu maximo potencial </h2> <hr>
+                <p class="grey-text text-darken-3 lighten-3">
+
+                  La libertad espiritual es el proceso por el cual el alma condicionada puede despojarse del sufrimiento, <br>
+                  la lujuria, la ira, el deseo. El proceso comienza liderado el paso de los pensamientos de la mente <br>
+                  desde el miedo a la fe, así el poder de la mente independiente es respaldado por la definicion de un proposito. <br>
+                  <br>
+                  Fe es la definición de un propósito respaldado por la convicción en la obtención del objetivo de ese proposito. <br>
+                  En esta plataforma se cubren programas en temas diversos como son: <br>
+                  el cuerpo, la mente, el espíritu, el trabajo y las relaciones.<br> </p>
+                <div class="column grupoClases">
+                  <!-- Contenidos Dispocisión -->
+                  <div class="carousel carousel-slider center" style="height: 480px;">
+                    <div class="carousel-item red white-text" href="#one!"
+                         style="z-index: -1; opacity: 1; visibility: visible; transform: translateX(0px) translateX(-589px) translateZ(0px);">
+                      <h2>First Panel</h2>
+                      <p class="white-text">This is your first panel</p>
+                    </div>
+                    <div class="carousel-item amber white-text" href="#two!"
+                         style="transform: translateX(0px) translateX(0px) translateX(0px) translateZ(0px); z-index: 0; opacity: 1; visibility: visible;">
+                      <h2>Second Panel</h2>
+                      <p class="white-text">This is your second panel</p>
+                    </div>
+                    <div class="carousel-item green white-text" href="#three!"
+                         style="transform: translateX(0px) translateX(589px) translateZ(0px); z-index: -1; opacity: 1; visibility: visible;">
+                      <h2>Third Panel</h2>
+                      <p class="white-text">This is your third panel</p>
+                    </div>
+                    <div class="carousel-item blue white-text" href="#four!"
+                         style="transform: translateX(0px) translateX(-1178px) translateZ(0px); z-index: -2; opacity: 1; visibility: visible;">
+                      <h2>Fourth Panel</h2>
+                      <p class="white-text">This is your fourth panel</p>
+                    </div>
+                    <ul class="indicators">
+                      <li class="indicator-item"></li>
+                      <li class="indicator-item active"></li>
+                      <li class="indicator-item"></li>
+                      <li class="indicator-item"></li>
+                    </ul>
                   </div>
-                  <div class="card-content">
-                    <p>El primer paso es tuyo. Un yogui es conciente de su energia,
-                      siente una relacion con el mundo y es capaz de polarizar sus pensamientos.</p>
+                  <div class="row">
+                    <div class="col s12 m7">
+                      <div class="card large card-panel hoverable">
+                        <div class="card-image">
+                          <img class="responsive-img" src="src/images/Clases/Horus.jpg">
+                          <span class="card-title">Dispocisión</span>
+                        </div>
+                        <div class="card-content">
+                          <p class="flow-text">El primer paso es tuyo. Un yogui es conciente de su energia,
+                            siente una relacion con el mundo y es capaz de polarizar sus pensamientos.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">Trabajo de Mindfullness</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-action">
-                    <a href="#">Trabajo de Mindfullness</a>
+                  <!-- Contenidos Expresividad -->
+                  <div class="row">
+                    <div class="col s12 m7">
+                      <div class="card large card-panel hoverable">
+                        <div class="card-image">
+                          <img class="responsive-img" src="images/Clases/PerlaSand.jpg">
+                          <span class="card-title">Expresividad</span>
+                        </div>
+                        <div class="card-content">
+                          <p class="flow-text"> El mundo es un constante fluir de impresiones, aprende a ataer de
+                          forma efectiva todo aquello que quieres.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#"> Consecucion </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contenidos Anclajes de PNL -->
+                  <div class="row">
+                    <div class="col s12 m7">
+                      <div class="card large card-panel hoverable">
+                        <div class="card-image">
+                          <img class="responsive-img" src="images/Clases/PlatonicSolids.jpg">
+                          <span class="card-title">Anclajes de PNL</span>
+                        </div>
+                        <div class="card-content">
+                          <p class="flow-text"> La programacion neuro linguistica te permite poseer super poderes,
+                          administra tus estados emocionales, y adquiere habitos efectivos.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#"> Super hombre </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contenidos Mundo de las ideas -->
+                  <div class="row">
+                    <div class="col s12 m7">
+                      <div class="card large card-panel hoverable">
+                        <div class="card-image ">
+                          <img class="responsive-img" src="../images/Clases/FloracionCerezos.jpeg">
+                          <span class="card-title">El mundo de las ideas</span>
+                        </div>
+                        <div class="card-content">
+                          <p class="flow-text"> La naturaleza material nos impulsa a la individuacion, a traves de tres atributos
+                            o gunas: sattva-equilibrio, rajas-actividad y tamas-inercia.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#"> Proposito de la mente </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contenidos Ciclos Cosmicos -->
+                  <div class="row">
+                    <div class="col s12 m7">
+                      <div class="card large card-panel hoverable">
+                        <div class="card-image">
+                          <img class="responsive-img" src="../images/Clases/Tortuga.jpg">
+                          <span class="card-title">Ciclos Cosmicos</span>
+                        </div>
+                        <div class="card-content">
+                          <p class="flow-text"> Tu camino esta dirijido, por el karma o actividad que cumple cada persona,
+                            conduciendo le a traves de la manifestacion dual por los caminos de Samsara y Nirvana.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#"> Asociacion trascendental </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Paginador de contenidos -->
+                  <div>
+                    <ul class="pagination">
+                      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                      <li class="active"><a href="#!">1</a></li>
+                      <li class="waves-effect"><a href="#!">2</a></li>
+                      <li class="waves-effect"><a href="#!">3</a></li>
+                      <li class="waves-effect"><a href="#!">4</a></li>
+                      <li class="waves-effect"><a href="#!">5</a></li>
+                      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m12 l4">
+                <!-- Sidebar Clases Destacadas clasesDestacadas -->
+                <div class="container ">
+                  <!-- Listado de las Clases destacadas -->
+                  <ul class="section table-of-contents collection">
+                    <li class="collection-header">
+                      <h4 class="center-align"> Clases destacadas </h4>
+                    </li>
+                    <hr>
+                    <li class="collection-item avatar">
+                      <img class="responsive-img circle" src="images/Marca/Om-Sat-Chit-Ananda.jpeg" alt="Semilla Vida">
+                      <span class="title">Intención y co-creación</span>
+                      <p> Manifiesta la capacidad de tu ser <br>
+                          El cambio está a una decisión de distancia
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons"> grade </i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle"> 2 </i>
+                      <span class="title">Abundancia en las relaciones</span>
+                      <p> Inspira amor con ejemplo <br>
+                          Vive en libertad para disfrutar de tus seres queridos
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle green"> 3 </i>
+                      <span class="title"> Conciencia Prohibida </span>
+                      <p> Meditación y la glándula pineal <br>
+                          Deslimita tu potencial interior, desarrollando mejor comprensión
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                      <i class="material-icons circle red"> 4 </i>
+                      <span class="title">Redescubriendo el Alma espiritual</span>
+                      <p> Como despojarse del condicionamiento <br>
+                          y moverse hacia adelante mediante las leyes naturales
+                      </p>
+                      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Formulario subscribe -->
+                <div class="container">
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">account_circle</i>
+                          <input id="icon_prefix" type="text" class="validate">
+                          <label for="icon_prefix">Nombre</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">phone</i>
+                          <input id="icon_telephone" type="tel" class="validate">
+                          <label for="icon_telephone">Telefono</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate">
+                          <label for="email">Correo</label>
+                          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                        <div class="input-field col s12">
+                          <i class="material-icons prefix">mode_edit</i>
+                          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                          <label for="icon_prefix2"> Mensaje</label>
+                        </div>
+                        <br> <br>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                          <i class="material-icons right">send</i>
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Contenidos Expresividad -->
-            <div class="row">
-              <div class="col s12 m7">
-                <div class="card medium">
-                  <div class="card-image">
-                    <img src="../assets/images/Horus.jpg">
-                    <span class="card-title">Expresividad</span>
-                  </div>
-                  <div class="card-content">
-                    <p> El mundo es un constante fluir de impresiones, aprende a ataer de
-                    forma efectiva todo aquello que quieres.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#"> Consecucion </a>
-                  </div>
+        </div>
+      </div>
+      <!--   Definiciones Importantes   -->
+      <div class="container">
+        <div class="section">
+          <div class="container">
+            <div class="nav-wrapper">
+              <div class="row">
+                <div class="col s12 m10 offset-m1">
+                  <h1 class="header"> Definiciones Importantes </h1>
                 </div>
               </div>
             </div>
-            <!-- Contenidos Anclajes de PNL -->
-            <div class="row">
-              <div class="col s12 m7">
-                <div class="card medium">
-                  <div class="card-image">
-                    <img src="../assets/images/Horus.jpg">
-                    <span class="card-title">Anclajes de PNL</span>
-                  </div>
-                  <div class="card-content">
-                    <p> La programacion neuro linguistica te permite poseer super poderes,
-                    administra tus estados emocionales, y adquiere habitos efectivos.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#"> Super hombre </a>
+          </div>
+          <div class="row">
+              <!--   Definicion Disernimiento   -->
+                <div class="col s12 m4 l4">
+                  <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Disernimiento</h5>
+                    <p class="light center-align"> Permite actuar con cautela y sabiduria, para pensarse las repercuciones antes de tomar acción, armonizando los resultados.</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Contenidos Mundo de las ideas -->
-            <div class="row">
-              <div class="col s12 m7">
-                <div class="card medium">
-                  <div class="card-image">
-                    <img src="../assets/images/Horus.jpg">
-                    <span class="card-title">El mundo de las ideas</span>
-                  </div>
-                  <div class="card-content">
-                    <p> La naturaleza material nos impulsa a la individuacion, a traves de tres atributos
-                      o gunas: sattva-equilibrio, rajas-actividad y tamas-inercia.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#"> Proposito de la mente </a>
+              <!--   Definicion Proposito Definido   -->
+                <div class="col s12 m4 l4">
+                  <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Proposito definido</h5>
+                    <p class="light center-align"> Decide lo que quieres de la vida y establece la manera de alcanzar lo con un plan, se autodeterminado en actuan con voluntad y autodisciplina, y administra el tiempo para llenar cada vacio.</p>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- Contenidos Ciclos Cosmicos -->
-            <div class="row">
-              <div class="col s12 m7">
-                <div class="card medium">
-                  <div class="card-image">
-                    <img src="../assets/images/Horus.jpg">
-                    <span class="card-title">Ciclos Cosmicos</span>
-                  </div>
-                  <div class="card-content">
-                    <p> Tu camino esta dirijido, por el karma o actividad que cumple cada persona,
-                      conduciendo le a traves de la manifestacion dual por los caminos de Samsara y Nirvana.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#"> Asociacion trascendental </a>
+              <!--   Definicion Mente Maestra   -->
+                <div class="col s12 m4 l4">
+                  <div class="icon-block">
+                    <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Relacionamiento Mente maestra</h5>
+                    <p class="light center-align">La cooperación armoniosa y voluntaria con personas que comparten un mismo fin u objetivo, permite generar alianzas superiores para apoyarse mutuamente en superar la adversidad e impulsarse hacia el exito.</p>
                   </div>
                 </div>
-              </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+    </main>
+    <!-- Comienza el footer -->
+    <footer class="page-footer">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text"> Ayúdanos a crecer </h5>
+              <p class="grey-text text-lighten-4">
+                Esperamos que hayas disfrutado usando esta Materia, si sientes
+                que te ha ayudado y quieres apoyar al equipo, puedes ayudarnos
+                donándonos. Cualquier cantidad ayudaría a apoyar y continuar el
+                desarrollo de este proyecto y será muy apreciada.  </p>
+              <a class="btn waves-effect waves-light red lighten-2" href="/support-us.html">Apoyar</a>
+              <br>
+              <h5 class="white-text"> Únete a la discusión </h5>
+              <p class="grey-text text-lighten-4">
+                Tenemos una sala de chat configurada donde puede hablar directamente
+                con nosotros. Entra y discute nuevas características, objetivos futuros,
+                problemas generales o preguntas, o cualquier otra cosa que puedas pensar. </p>
+              <a class="btn waves-effect waves-light red lighten-2" href="/support-us.html">Chat</a>
             </div>
-            <!-- Paginador de contenidos -->
-            <div>
-              <ul class="pagination">
-                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                <li class="active"><a href="#!">1</a></li>
-                <li class="waves-effect"><a href="#!">2</a></li>
-                <li class="waves-effect"><a href="#!">3</a></li>
-                <li class="waves-effect"><a href="#!">4</a></li>
-                <li class="waves-effect"><a href="#!">5</a></li>
-                <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text"> Revisa todo el Contenido </h5>
+              <p class="grey-text text-lighten-4"> Siguenos para más historias de crecimiento espiritual  </p>
+              <br>
+              <h5 class="white-text"> En redes sociales </h5>
+              <!-- Nosotros en redes sociales -->
+              <ul>
+                <li><i class="material-icons left">arrow_drop_down</i>
+                  <a class="grey-text text-lighten-3" href="https://www.facebook.com/VedicRishis"> Facebook</a></li>
+                <li><i class="material-icons left">arrow_drop_down</i>
+                  <a class="grey-text text-lighten-3" href="https://www.instagram.com/libertad_espiritual_prescripta"> Instagram</a></li>
+                <li><i class="material-icons left">arrow_drop_down</i>
+                  <a class="grey-text text-lighten-3" href="#!"> Youtube</a></li>
+                <li><i class="material-icons left">arrow_drop_down</i>
+                  <a class="grey-text text-lighten-3" href="#!"> Twitter</a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="column">
-          <!-- Sidebar Clases Destacadas -->
+        <!-- Legal Copyright -->
+        <div class="footer-copyright">
           <div class="container">
-            <!-- Listado de las Clases destacadas -->
-            <ul class="section table-of-contents collection">
-              <li class="collection-header"><h4> Clases destacadas </h4></li>
-              <li class="collection-item avatar">
-                <img src="../assets/images/Om-Sat-Chit-Ananda.jpeg" alt="" class="circle">
-                <span class="title">Intención y co-creación</span>
-                <p> Manifiesta la capacidad de tu ser <br>
-                    El cambio está a una decisión de distancia
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons"> grade </i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="material-icons circle"> 2 </i>
-                <span class="title">Abundancia en las relaciones</span>
-                <p> Inspira amor con ejemplo <br>
-                    Vive en libertad para disfrutar de tus seres queridos
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="material-icons circle green"> 3 </i>
-                <span class="title"> Conciencia Prohibida </span>
-                <p> Meditación y la glándula pineal <br>
-                    Deslimita tu potencial interior, desarrollando mejor comprensión
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-              <li class="collection-item avatar">
-                <i class="material-icons circle red"> 4 </i>
-                <span class="title">Redescubriendo el Alma espiritual</span>
-                <p> Como despojarse del condicionamiento <br>
-                    y moverse hacia adelante mediante las leyes naturales
-                </p>
-                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li>
-            </ul>
+              Vimukti-Phat © 2020 Copyright
+            <a class="grey-text text-lighten-4 right" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional </a>
           </div>
-        </div>
-      </section>
-    </div>
-    <!--   Definiciones Importantes   -->
-    <div class="container">
-      <div class="section">
-        <!--   Definicion Disernimiento   -->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-              <h5 class="center">Disernimiento</h5>
-              <p class="light"> Permite actuar con cautela y sabiduria, para pensarse las repercuciones antes de tomar acción, armonizando los resultados.</p>
-            </div>
-          </div>
-          <!--   Definicion Proposito Definido   -->
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center">Proposito definido</h5>
-              <p class="light"> Decide lo que quieres de la vida y establece la manera de alcanzar lo con un plan, se autodeterminado en actuan con voluntad y autodisciplina, y administra el tiempo para llenar cada vacio.</p>
-            </div>
-          </div>
-          <!--   Definicion Mente Maestra   -->
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-              <h5 class="center">Relacionamiento Mente maestra</h5>
-              <p class="light">La cooperación armoniosa y voluntaria con personas que comparten un mismo fin u objetivo, permite generar alianzas superiores para apoyarse mutuamente en superar la adversidad e impulsarse hacia el exito.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br>
-    <!-- Comienza el footer -->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text"> Revisa todo el Contenido </h5>
-            <p class="grey-text text-lighten-4"> Siguenos para más historias de crecimiento espiritual  </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text"> Social </h5>
-            <!-- Nosotros en redes sociales -->
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/VedicRishis">Facebook</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/libertad_espiritual_prescripta">Instagram</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Youtube</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Legal Copyright -->
-      <div class="footer-copyright">
-        <div class="container">
-            Vimukti-Phat © 2020 Copyright
-          <a class="grey-text text-lighten-4 right" href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"> Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional </a>
         </div>
       </div>
     </footer>

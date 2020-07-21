@@ -14,3 +14,34 @@
 html {
   font-family: 'Epilogue', sans-serif;
 }
+h1{
+  font-size: 4.2rem;
+  line-height: 110%;
+}
+.header{
+  color: #ee6e73;
+  font-weight: 300;
+}
+.whiteRow {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+}
+.mainContainer{
+  width: 90%;
+  margin: 0 0 0 auto;
+  max-width: 1333px;
+}
+.clasesDestacadas{
+  width: 90%;
+}
+.contenidoClases{
+  width: 70%;
+}
+.grupoClases {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
